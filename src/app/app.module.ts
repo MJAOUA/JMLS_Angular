@@ -1,3 +1,6 @@
+
+
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -44,6 +47,12 @@ import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatMenuModule} from '@angular/material/menu';
 import { PasswordComponent } from './password/password.component';
+import { ReclamationListComponent } from './reclamation-list/reclamation-list.component';
+import { CreateReclamationComponent } from './create-reclamation/create-reclamation.component';
+import { UpdateReclamationComponent } from './update-reclamation/update-reclamation.component';
+import { ReclamationDetailsComponent } from './reclamation-details/reclamation-details.component';
+import { ReclamationAdminComponent } from './reclamation-admin/reclamation-admin.component';
+import { TraiterReclamationComponent } from './traiter-reclamation/traiter-reclamation.component';
 
 
 
@@ -58,6 +67,13 @@ import { PasswordComponent } from './password/password.component';
     BoardModeratorComponent,
     BoardUserComponent,
     PasswordComponent,
+    ReclamationListComponent,
+    CreateReclamationComponent,
+    UpdateReclamationComponent,
+    ReclamationDetailsComponent,
+    ReclamationAdminComponent,
+    TraiterReclamationComponent,
+  
   ],
   imports: [
     BrowserModule,

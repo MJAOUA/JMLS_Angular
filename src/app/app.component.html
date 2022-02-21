@@ -12,12 +12,26 @@
       <li class="nav-item" *ngIf="showAdminBoard">
         <a href="/register" class="nav-link" routerLink="register">Gestion Utilisateurs</a>
       </li>
+
+      <li class="nav-item" *ngIf="showAdminBoard">
+        <a href="/reclamation-admin" class="nav-link" routerLink="reclamation-admin">Gestion Reclamations</a>
+      </li>
+
       <li class="nav-item" *ngIf="showModeratorBoard">
         <a href="/mod" class="nav-link" routerLink="mod">Moderator Board</a>
       </li>
       <li class="nav-item" *ngIf="showUserBoard">
         <a href="/user" class="nav-link"  routerLink="user">User</a>
       </li>
+    
+      <li class="nav-item" *ngIf="showUserBoard">
+        <a href="/reclamations" class="nav-link"  routerLink="reclamations">Consulter réclamations</a>
+      </li>
+      <li class="nav-item" *ngIf="showUserBoard">
+        <a href="/create-reclamation" class="nav-link"  routerLink="create-reclamation">Envoyer une réclamation</a>
+      </li>>
+    
+    
     </ul>
 
     <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
@@ -52,6 +66,7 @@
       </li> -->
     </ul>
   </nav>
+  
 
   <div class="container">
     <router-outlet></router-outlet>
